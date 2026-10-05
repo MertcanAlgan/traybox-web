@@ -121,7 +121,11 @@ export default function Home() {
           <div className="price">$2.99</div>
           <div className="price-sub">One-time purchase</div>
           <div className="price-note">Includes a license key you can activate on up to {config.defaultMaxActivations} Macs.</div>
-          <a className="pill" href={config.checkoutUrl}>Buy now</a>
+          {config.checkoutUrl ? (
+            <a className="pill" href={config.checkoutUrl}>Buy now</a>
+          ) : (
+            <span className="pill disabled" title="Set NEXT_PUBLIC_CHECKOUT_URL">Coming soon</span>
+          )}
           <div className="price-fine">
             After checkout your license key arrives by email. Enter it in the app to activate.<br />
             Requires macOS 13 or later.
