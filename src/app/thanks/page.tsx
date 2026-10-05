@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { config } from "@/lib/config";
 
-export const metadata = { title: "Thank you — Layover" };
+export const metadata = { title: "Thank you — Traybox" };
 
 export default function Thanks() {
   return (
@@ -9,7 +9,7 @@ export default function Thanks() {
       <section className="hero thanks">
         <h1>Thank you.</h1>
         <p className="lead">
-          Your license key is on its way to your email. Open Layover, enter the key on the activation screen, and you're set.
+          Your license key is on its way to your email. Open Traybox, enter the key on the activation screen, and you're set.
         </p>
         <p className="lead small">
           Nothing in your inbox after a few minutes? Check your spam folder

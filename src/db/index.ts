@@ -4,7 +4,7 @@ import * as schema from "./schema";
 
 declare global {
   // eslint-disable-next-line no-var
-  var __layoverPool: Pool | undefined;
+  var __trayboxPool: Pool | undefined;
 }
 
 function createPool(): Pool {
@@ -18,8 +18,8 @@ function createPool(): Pool {
 }
 
 // Reuse one pool across hot reloads and warm serverless invocations.
-const pool = globalThis.__layoverPool ?? createPool();
-if (process.env.NODE_ENV !== "production") globalThis.__layoverPool = pool;
+const pool = globalThis.__trayboxPool ?? createPool();
+if (process.env.NODE_ENV !== "production") globalThis.__trayboxPool = pool;
 
 export const db = drizzle(pool, { schema });
 export { schema };

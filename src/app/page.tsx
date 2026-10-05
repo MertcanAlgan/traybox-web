@@ -24,7 +24,7 @@ export default function Home() {
     <div className="site">
       <header className="nav">
         <div className="nav-inner">
-          <span className="nav-brand">Layover</span>
+          <span className="nav-brand">Traybox</span>
           <nav>
             <a href="#shelf">File shelf</a>
             <a href="#clipboard">Clipboard</a>
@@ -114,10 +114,10 @@ export default function Home() {
       </section>
 
       <section id="buy" className="band buy">
-        <h2>Get Layover.</h2>
+        <h2>Get Traybox.</h2>
         <p>One app. File shelf and clipboard history in a single floating window.</p>
         <div className="price-card">
-          <div className="price-name">Layover for Mac</div>
+          <div className="price-name">Traybox for Mac</div>
           <div className="price">$2.99</div>
           <div className="price-sub">One-time purchase</div>
           <div className="price-note">Includes a license key you can activate on up to {config.defaultMaxActivations} Macs.</div>
@@ -135,7 +135,7 @@ export default function Home() {
       </section>
 
       <footer className="foot">
-        <span>Layover, made by Mertcan Algan.</span>
+        <span>Traybox, made by Mertcan Algan.</span>
         <span>For macOS 13 and later.</span>
       </footer>
     </div>

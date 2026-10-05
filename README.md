@@ -1,6 +1,6 @@
-# Layover web
+# Traybox web
 
-Landing site, license API and admin panel for the Layover Mac app. One Next.js 14 project (App Router) with Postgres (Drizzle).
+Landing site, license API and admin panel for the Traybox Mac app. One Next.js 14 project (App Router) with Postgres (Drizzle).
 
 ## What it does
 
@@ -32,7 +32,7 @@ Put the public key printed by `keygen` into the app (`LicenseConfig.publicKey`) 
 
 1. Create the product ($2.99, single payment) and copy its checkout link into `NEXT_PUBLIC_CHECKOUT_URL`.
 2. Settings → Webhooks: URL `https://YOUR-DOMAIN/api/webhooks/lemonsqueezy`, a signing secret (`LEMONSQUEEZY_WEBHOOK_SECRET`), events `order_created` and `order_refunded`.
-3. Optionally set `LEMONSQUEEZY_PRODUCT_ID` so other products in the store don't create Layover licenses.
+3. Optionally set `LEMONSQUEEZY_PRODUCT_ID` so other products in the store don't create Traybox licenses.
 4. Set the product's confirmation redirect to `/thanks`.
 
 ## Deploying (Railway)

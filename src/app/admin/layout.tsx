@@ -12,7 +12,7 @@ export default async function AdminLayout({ children }: { children: React.ReactN
     <div className="admin">
       <header className="admin-bar">
         <Link href="/admin" className="admin-brand">
-          Layover admin
+          Traybox admin
         </Link>
         {signedIn && (
           <nav>

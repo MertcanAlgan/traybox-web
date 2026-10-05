@@ -1,7 +1,7 @@
 // Edge-safe (jose only): imported by the middleware, so no node:crypto here.
 import { SignJWT, jwtVerify } from "jose";
 
-export const SESSION_COOKIE = "layover_admin";
+export const SESSION_COOKIE = "traybox_admin";
 const SESSION_SECONDS = 60 * 60 * 12;
 
 function secret(): Uint8Array {
